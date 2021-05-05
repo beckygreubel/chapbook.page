@@ -43,6 +43,11 @@ body{
     display: block;
 }
 
+.mobile h3{
+    background-color: var(--accent1);
+    padding: 20px;
+}
+
 .main{
     display: none;
     width: 60vw;

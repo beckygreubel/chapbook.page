@@ -87,7 +87,7 @@ let exampleLines = [
         'make it past my current barriers',
         'make it through the wall',
         'of my insecurity',
-        'insecurity that gnaws at my insides',
+        'insecurity that hurts my insides',
         'until I am no longer whole',
         'but instead am small pieces',
         'that do not fit quite together',
@@ -165,7 +165,7 @@ findSynonyms(last_a).then(function(){
       
             Bindery.makeBook({
               content: '#content',
-              view: Bindery.View.FLIPBOOK,
+            //   view: Bindery.View.FLIPBOOK,
               pageSetup: {
                   size: {
                       width: '4in', height: '6in'
@@ -210,8 +210,9 @@ findSynonyms(last_a).then(function(){
                 ]
             }); 
             document.getElementById('loading').style.opacity = 0;
-            document.getElementById('loading').style.display = "none";
-            
+            setTimeout(function(){
+                document.getElementById('loading').style.display = "none";
+            }, 3000)        
 });
 
 function addPhoto(){
