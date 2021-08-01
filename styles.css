@@ -40,13 +40,14 @@ header, .main{
 .mobile{
     display: block;
     position: relative;
+    height: 100vh;
 }
 
 .mobileText{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0 10px;
 }
 
