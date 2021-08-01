@@ -11,11 +11,15 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div id="loading">
-        <h3>Your chapbook is being written.</h3>
+        <div class="bg-photo">
+            <img id="bgPhoto" src="media/images/img10.jpeg">
+        </div>
+        <div class="loadingText">
+            <h3>Your chapbook is being written.</h3>
+        </div>
     </div>
     <div id="content">
         <div id="frontPage">
@@ -36,7 +40,7 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/rita"></script>
+    <script src="https://unpkg.com/rita@2.4.200/dist/rita.js"></script>
     <script src="bindery.min.js"></script>
     <script src="poetry.js"></script>
 </body>

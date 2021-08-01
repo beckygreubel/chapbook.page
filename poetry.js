@@ -210,9 +210,7 @@ findSynonyms(last_a).then(function(){
                 ]
             }); 
             document.getElementById('loading').style.opacity = 0;
-            setTimeout(function(){
-                document.getElementById('loading').style.display = "none";
-            }, 3000)        
+            document.getElementById('loading').style.display = "none";      
 });
 
 function addPhoto(){
@@ -317,7 +315,6 @@ function createLine(){
             lineByToken.push(word);
         }
     line = RiTa.untokenize(lineByToken);
-    console.log(line);
     } else {
         if (exampleLines.length > 1){
             let randomLine = Math.floor(Math.random() * exampleLines.length);

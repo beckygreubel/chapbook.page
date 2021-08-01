@@ -11,27 +11,12 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <div class="mobile">
-        <h3>Create your chapbook on your desktop</h3>
-    </div>
-    <div class="main">
-        <div id="title">
-            <h3 id="meta-data"><span id="dateHere"></span>
-                <br><span id="timeHere"></span></h3>
-            <p id="question">In one word, how do you feel right now?</p>
-        </div>
-        <div class="input">
-            <div class="cursor">
-                <input class="input-content" id="input-emotion" maxlength="20" autocomplete="off">
-                <i class="blink"></i>
-            </div>
-                
-        </div>
-        <button id="submit">WRITE CHAPBOOK</button>
-        <footer>
+    <header>
+        <span class="meta-data" id="timeHere"></span>
+        <span class="meta-data" id="dateHere"></span>
+        <div id="about-button">
             <button id="accordian">ABOUT</button>
             <div id="panel">This website was created by Becky Greubel as part of the Spring 2021
                 course Currents: A-Generative-Web, taught by John Provencher. By entering a word 
@@ -40,9 +25,34 @@
                 parts of speech, and finding synonyms and like words to your entry. The chapbook is then 
                 presented using Bindery.js, and can be printed to have a physical chapbook of the poetry. <br><br>
                 Colophon:<br>
-                Typecase is Wremena by <a href="https://typefaces.temporarystate.net/preview/Wremena">The Temporary State</a>
+                Typeface is Wremena by <a href="https://typefaces.temporarystate.net/preview/Wremena">The Temporary State</a>
+            </div>        
+        </div>
+    </header>
+    <div class="mobile">
+        <div class="bg-photo">
+            <img id="bgPhoto" src="media/images/img10.jpeg">
+        </div>
+        <div class="mobileText">
+            <h3>You are &emsp; &emsp; here,&emsp; now, and yet <br>we have &emsp; &emsp; &emsp;found ourselves <br><br><br><br> at a crossroads.<br><br><br><br> Breathe, <br><br>slowly, and move &emsp; &emsp; yourself to<br><br> &emsp; &emsp; &emsp;a desktop or laptop, <br><br><br>to experience a chapbook of your own.</h3>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="holder">
+            <div id="title">
+                <p id="question">In one word, how do you feel right now?</p>
             </div>
-        </footer>
+            <div class="input">
+                <div class="cursor">
+                    <input class="input-content" id="input-emotion" maxlength="20" autocomplete="off">
+                    <i class="blink"></i>
+                </div>
+                    
+            </div>
+            <button id="submit">WRITE CHAPBOOK</button>
+        </div> 
+
     </div>
 </div>
 

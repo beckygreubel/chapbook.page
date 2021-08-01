@@ -29,28 +29,58 @@ body, html{
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
     background-color: var(--bgColor);
     font-family: var(--font2);
     color: var(--accent2);
+}
+header, .main{
+    margin-left: 20px;
+}
+.mobile{
+    display: block;
+    position: relative;
+}
+
+.mobileText{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0 10px;
 }
 
-.mobile{
-    display: block;
-}
-
-.mobile h3{
-    background-color: var(--accent1);
+.mobileText h3{
+    background-color: var(--bgColor);
     padding: 20px;
+}
+
+header{
+    position: fixed;
+    width: calc(100vw - 30px);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.bg-photo{
+    filter: invert(80%);
+    z-index: -100;
+    position: fixed;
+}
+
+#bgPhoto{
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
 }
 
 .main{
     display: none;
-    width: 60vw;
+    width: 80vw;
+    height: calc(100vh - 20px);
+    justify-content:flex-start;
+    align-items:flex-end;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li{
@@ -60,17 +90,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 
 #question{
-    font-size: 3rem;
-    text-align: center;
+    font-size: 5rem;
+    margin: 0;
 }
 
-#meta-data{
-    float: right;
-    font-size: .6rem;
-}
 
 .input{
-    margin: 8rem 0 .5rem 0;
+    margin: 4rem 0 .5rem 0;
 }
 
 .input-content{
@@ -81,13 +107,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
     border-bottom: 2px solid var(--accent1);
     background-color: var(--bgColor);
     outline: none;
-    font-size: 2rem;
+    font-size: 10rem;
     font-family: var(--font2);
+    color: rgb(216, 135, 30);
 }
 
 a{
     color: var(--accent2);
     text-decoration: none;
+}
+
+#dateHere{
+    text-align: center;
 }
 
 button{
@@ -104,13 +135,22 @@ button:hover{
     color: var(--accent2);
 }
 
+#about-button, .meta-data{
+    flex-basis: 33%;
+}
+
+#accordian{
+    float: right;
+}
+
 #panel{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    width: 60%;
+    width: 200%;
     margin-bottom: 20px;
-    
+    background-color: var(--bgColor);
+    float: right;
   }
 
 .open{
@@ -125,7 +165,7 @@ button:hover{
     position: absolute;
     width: 1px;
     height: 80%;
-    background-color: var(--accent2);
+    background-color: rgb(216, 135, 30);
     left: 51.5%;
     top: 10%;
     animation: blink 1s infinite;
@@ -147,6 +187,12 @@ button:hover{
     }
 
     .main{
-        display: block;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body, html{
+        font-size: 18px;
     }
 }
