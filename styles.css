@@ -41,6 +41,7 @@ header, .main{
     display: block;
     position: relative;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .mobileText{
